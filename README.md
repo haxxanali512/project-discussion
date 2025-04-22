@@ -1,24 +1,42 @@
-# README
+# ProjectFlow
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ProjectFlow is a project management application built with Ruby on Rails. It allows users to manage projects, track activities, and collaborate effectively.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+- User authentication using Devise.
+- Project management (CRUD operations).
+- Activity tracking for projects.
+- Dynamic UI with modals and AJAX for seamless interactions.
 
-* System dependencies
+---
 
-* Configuration
+## Setup Instructions
 
-* Database creation
+Follow these steps to set up the repository on your local machine:
 
-* Database initialization
+### Prerequisites
 
-* How to run the test suite
+Ensure you have the following installed:
 
-* Services (job queues, cache servers, search engines, etc.)
+- Ruby (version `3.x` or compatible)
+- Rails (version `7.x` or compatible)
+- PostgreSQL (or your preferred database)
+- Node.js and Yarn (for managing JavaScript dependencies)
 
-* Deployment instructions
+---
 
-* ...
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd project_conversation
+
+### 2. Install Dependencies
+Run the following commands to install Ruby and JavaScript dependencies:
+
+install
+```bash
+bundle install
+yarn install
+```
