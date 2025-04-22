@@ -48,7 +48,7 @@ Create and migrate the database:
 ```bash
 rails db:create
 rails db:migrate
-```
+
 
 ### 4. Start the Server
 
@@ -61,6 +61,27 @@ rails server
 Visit `http://localhost:3000` in your browser to access the application.
 
 ---
+
+### 🔍 Questions I'd Ask the Team
+
+1. **What are the possible statuses a project can have?**  
+    **Expected Answer:** "pending", "in_progress", "completed", "on_hold"
+
+2. **Should only certain users be able to comment or change status (e.g., authenticated users)?**  
+    **Expected Answer:** Only authenticated users.
+
+3. **Do we need to track who made each comment or status change?**  
+    **Expected Answer:** Yes, associate each action with a user.
+
+4. **Should the status changes and comments be displayed together in a single, timestamped history list?**  
+    **Expected Answer:** Yes, in chronological order.
+
+5. **Should comments support formatting or just plain text?**  
+    **Expected Answer:** Plain text is fine for now.
+
+6. **Is there a UI framework or design system we should follow?**  
+    **Expected Answer:** No specific design system—keep it clean and functional.
+```
 
 ## Contributing
 
