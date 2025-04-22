@@ -1,5 +1,5 @@
 # ProjectFlow
-ProjectFlow is a project management application built with Ruby on Rails. It allows users to manage projects, track activities, and collaborate effectively.
+ProjectFlow is a project management application built with Ruby on Rails. It allows users to manage projects, track activities, and collaborate effectively. The video recording of the project can be watched here: https://drive.google.com/file/d/18CrbhgvhPMnusEOEpYdhjL7RrZMCiBPP/view?usp=sharing
 
 ## Features
 
