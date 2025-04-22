@@ -1,6 +1,4 @@
 class ProjectsController < ApplicationController
-  include ProjectConcern
-  before_action :set_current_project
   def index
     @projects = Project.all
     respond_to do |format|

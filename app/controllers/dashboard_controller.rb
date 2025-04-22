@@ -1,6 +1,4 @@
 class DashboardController < ApplicationController
-  include ProjectConcern
-  before_action :set_current_project
   def index
     @projects = Project.all
     if @current_project

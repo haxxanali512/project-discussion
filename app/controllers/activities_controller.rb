@@ -1,6 +1,4 @@
 class ActivitiesController < ApplicationController
-  include ProjectConcern
-  before_action :set_current_project
 
   def create
     @activity = Activity.new(activity_params)
