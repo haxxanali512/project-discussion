@@ -1,0 +1,20 @@
+<div class="conversation-timeline">
+  <% activities.each do |activity| %>
+    <div class="timeline-entry <%= activity.activity_type %>">
+      <div class="timeline-icon <%= activity.activity_type == 'comment' ? 'comment-icon' : 'status-icon' %>">
+        <% if activity.activity_type == 'comment' %>
+          <img src="https://xsgames.co/randomusers/assets/images/favicon.png" alt="">
+        <% else %>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-cw"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M3 21v-5h5"/></svg>
+        <% end %>
+      </div>
+      <div class="timeline-content">
+        <div class="entry-header">
+          <span class="entry-author"><%= activity.user.name %></span>
+          <span class="entry-time"><%= activity.created_at.strftime('%H:%M') %></span>
+        </div>
+        <p class="entry-message"><%= activity.body %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
